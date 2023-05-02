@@ -9,14 +9,13 @@ const Navbar = () => {
         <span>Discover</span> <span>San Francisco</span>
       </h3>
       <div className="flex gap-6">
-        <div className="menu-item">Home</div>
+        <div className="menu-item current">Home</div>
         <div className="menu-item">Things to Do</div>
         <div className="menu-item">Neighborhoods</div>
         <div className="menu-item">Food & Drink</div>
         <div className="menu-item">Events</div>
         <div className="menu-item">Insider Tips</div>
       </div>
-
       <style jsx>{`
         .menu-item {
           position: relative;
@@ -31,9 +30,10 @@ const Navbar = () => {
           background-color: #000;
           transform: scaleX(0);
           transform-origin: 0% 50%;
-          transition: transform 0.7s;
+          transition: transform 0.8s;
         }
-        .menu-item:hover::before {
+        .menu-item:hover::before,
+        .menu-item.current::before {
           transform: scaleX(1);
         }
         .menu-item:hover::after {
@@ -44,7 +44,7 @@ const Navbar = () => {
           bottom: -2px;
           height: 2px;
           background-color: #000;
-          animation: underline 0.7s forwards;
+          animation: underline 0.8s forwards;
         }
         @keyframes underline {
           0% {
@@ -61,6 +61,7 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 
 
