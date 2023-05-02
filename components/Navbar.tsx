@@ -8,14 +8,16 @@ const Navbar = () => {
       <h3 className="flex flex-col font-black text-4xl leading-[85%]">
         <span>Discover</span> <span>San Francisco</span>
       </h3>
-      <div className="flex gap-6">
+
+      <motion.div variants={wordAnimation} className="flex gap-6">
         <div className="menu-item current">Home</div>
         <div className="menu-item">Things to Do</div>
         <div className="menu-item">Neighborhoods</div>
         <div className="menu-item">Food & Drink</div>
         <div className="menu-item">Events</div>
         <div className="menu-item">Insider Tips</div>
-      </div>
+
+      </motion.div>
       <style jsx>{`
         .menu-item {
           position: relative;
