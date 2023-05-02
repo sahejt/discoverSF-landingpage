@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         <source src="/assets/hero-video.mp4" type="video/mp4" />
       </motion.video>
       <footer className="flex justify-center text-sm text-zinc-400 py-12">
-        <p>Created by <a href="https://sahejtuli.com">Sahej Tuli</a>. Video by Tyler Norwood.</p>
+        <p>Created by <a href="https://sahejtuli.com">Sahej Tuli</a>. Stock videos were used under fair use.</p>
       </footer>
     </motion.div>
   );
